@@ -1,3 +1,9 @@
+import ComingSoon from "./components/ComingSoon";
+
 export default function Home() {
-  return <h1>Prem Dave</h1>;
+  return (
+    <main>
+      <ComingSoon />
+    </main>
+  );
 }
