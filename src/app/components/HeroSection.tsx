@@ -35,7 +35,10 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="flex flex-col gap-3 md:items-end md:w-1/2">
-          <Logo className="hidden md:block" />
+          <div className="hidden relative w-fit md:block">
+            <h1 className="font-zeyada text-6xl">Prem D Dave</h1>
+            <div className="absolute bottom-2 bg-yellow-400 h-1/3 w-full -rotate-3 -z-10" />
+          </div>
           <p className="text-gray-500 md:text-right">
             Blending the power of words, the art of law, and the magic of
             melodies. Explore captivating stories, insightful legal articles,

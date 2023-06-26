@@ -7,9 +7,7 @@ export default function Footer() {
   return (
     <footer className="container mx-auto px-3 py-7">
       <div className="flex flex-col gap-2">
-        <Link href="/">
-          <Logo size="sm" />
-        </Link>
+        <Logo size="sm" />
         <SocialLinks size={20} />
       </div>
       <hr className="my-3" />

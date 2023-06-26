@@ -22,9 +22,9 @@ const menus = [
 export default function Header() {
   return (
     <header className="container mx-auto px-3 py-7 flex flex-col gap-1 justify-between md:flex-row md:items-center duration-300">
-      <Link className="" href="/">
+      <div>
         <Logo className="md:hidden" />
-      </Link>
+      </div>
       <div className="flex items-center">
         <span className="md:hidden">/</span>
         <nav className="flex gap-3 md:gap-7">
