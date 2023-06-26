@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const menus = [
   {
@@ -22,7 +23,7 @@ export default function Header() {
   return (
     <header className="container mx-auto px-3 py-7 flex flex-col gap-1 justify-between md:flex-row md:items-center duration-300">
       <Link className="" href="/">
-        <h1 className="text-4xl font-extrabold md:hidden">Prem Dave</h1>
+        <Logo className="md:hidden" />
       </Link>
       <div className="flex items-center">
         <span className="md:hidden">/</span>

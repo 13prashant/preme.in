@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className={`${poppins.className} ${zeyada.variable}`}>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
