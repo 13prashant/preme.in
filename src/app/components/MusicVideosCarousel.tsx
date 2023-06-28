@@ -43,23 +43,31 @@ export default function MusicVideosCarousel() {
         onClick={() => handlePrevItem()}
         className="hidden md:block cursor-pointer"
         color="#000"
-        size={200}
+        size={100}
       />
 
       <Carousel
         selectedItem={carouselIndex}
         centerMode
-        centerSlidePercentage={isMobileScreen ? 75 : 31}
+        centerSlidePercentage={isMobileScreen ? 60 : 33.3}
         emulateTouch={true}
         showThumbs={false}
         showArrows={false}
         showStatus={false}
         showIndicators={false}
+        className="w-full"
       >
         {youtubeVideos.map(({ id, link, alt, image }) => (
           <Link key={id} href={link} target="_blank">
-            <div className="p-2 hover:scale-105 duration-500">
-              <Image src={image} width={500} height={500} alt={alt} />
+            <div className="p-1 md:p-2 hover:scale-105 duration-300">
+              <div className="relative h-44 w-full md:h-56 duration-300">
+                <Image
+                  style={{ objectFit: "contain" }}
+                  src={image}
+                  fill
+                  alt={alt}
+                />
+              </div>
             </div>
           </Link>
         ))}
@@ -68,7 +76,7 @@ export default function MusicVideosCarousel() {
         onClick={() => handleNextItem()}
         className="hidden md:block cursor-pointer"
         color="#000"
-        size={200}
+        size={100}
       />
     </div>
   );
