@@ -1,10 +1,18 @@
+import { Poppins, Zeyada } from "next/font/google";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./globals.css";
-import { Poppins } from "next/font/google";
 
 const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-poppins",
-  weight: ["200", "400", "600"],
+  weight: ["200", "400", "600", "700", "800"],
+});
+
+const zeyada = Zeyada({
+  subsets: ["latin"],
+  variable: "--font-zeyada",
+  weight: "400",
 });
 
 export const metadata = {
@@ -19,7 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} font-sans`}>{children}</body>
+      <body className={`${poppins.className} ${zeyada.variable}`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

@@ -1,9 +1,11 @@
-import ComingSoon from "./components/ComingSoon";
+import HeroSection from "./components/HeroSection";
+import MusicSection from "./components/MusicSection";
 
 export default function Home() {
   return (
     <main>
-      <ComingSoon />
+      <HeroSection />
+      <MusicSection />
     </main>
   );
 }
