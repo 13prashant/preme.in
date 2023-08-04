@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { youtubeVideos } from "@/utils/constants";
 
 export default function MusicVideosCarousel() {
