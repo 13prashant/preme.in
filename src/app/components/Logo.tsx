@@ -1,4 +1,5 @@
 import Link from "next/link";
+import BottomBorder from "./common/BottomBorder";
 
 interface Props {
   className?: string;
@@ -13,7 +14,7 @@ export default function Logo({ className, size }: Props) {
         >
           Preme
         </h1>
-        <div className="absolute bottom-2 bg-yellow-400 h-1/3 w-full -rotate-3 -z-10" />
+        <BottomBorder className="bottom-2" />
       </div>
     </Link>
   );

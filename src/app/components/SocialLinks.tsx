@@ -1,7 +1,6 @@
-import { INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL } from "@/utils/constants";
 import Link from "next/link";
-import React from "react";
 import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
+import { INSTAGRAM_URL, FACEBOOK_URL, TWITTER_URL } from "@/utils/constants";
 
 interface Props {
   size?: number;

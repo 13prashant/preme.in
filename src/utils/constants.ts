@@ -2,7 +2,7 @@ export const INSTAGRAM_URL = "https://www.instagram.com/preme_qahanni/";
 export const FACEBOOK_URL = "https://www.facebook.com/prem.dave.33";
 export const TWITTER_URL = "https://twitter.com/premdave99";
 
-export const PRASHANT_WEBSITE_URL = "https://www.prashaant.in/";
+export const DEVELOPER_WEBSITE_URL = "https://www.prashaant.in/";
 
 export const youtubeVideos = [
   {
@@ -34,5 +34,23 @@ export const youtubeVideos = [
     image: "/assets/youtubeThumbnails/meri-guddiyaa.jpg",
     link: "https://www.youtube.com/watch?v=3PpCs8Uznow",
     alt: "Meri Guddiyaa",
+  },
+];
+
+export const blogs = [
+  {
+    id: 1,
+    url: "https://indiantraditionalknowledge.blogspot.com/",
+    name: "Shape of Sound",
+  },
+  {
+    id: 2,
+    url: "https://pineapplepickle.blogspot.com/",
+    name: "Pineapple Pickle",
+  },
+  {
+    id: 1,
+    url: "https://to-be-precise-poem-preme-qahanni.blogspot.com/",
+    name: "To be Precise",
   },
 ];

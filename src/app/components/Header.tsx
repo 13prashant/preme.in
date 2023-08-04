@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "./Logo";
 
 const menus = [
@@ -10,7 +12,7 @@ const menus = [
   {
     id: 1,
     name: "Blogs",
-    href: "/",
+    href: "/blogs",
   },
   {
     id: 2,
@@ -20,10 +22,14 @@ const menus = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
+
+  const isHomePage = pathname === "/";
+
   return (
-    <header className="container mx-auto px-3 py-7 flex flex-col gap-1 justify-between md:flex-row md:items-center duration-300">
+    <header className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center">
       <div>
-        <Logo className="md:hidden" />
+        <Logo className={`${isHomePage ? "md:hidden" : ""}`} />
       </div>
       <div className="flex items-center">
         <span className="md:hidden">/</span>

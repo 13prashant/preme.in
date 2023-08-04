@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import SocialLinks from "./SocialLinks";
-import { PRASHANT_WEBSITE_URL } from "@/utils/constants";
+import { DEVELOPER_WEBSITE_URL } from "@/utils/constants";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto px-3 py-7">
+    <footer className="preme-container">
       <div className="flex flex-col gap-2">
         <Logo size="sm" />
         <SocialLinks size={20} />
@@ -29,7 +29,7 @@ export default function Footer() {
           Made with <span className="text-yellow-400">&hearts;</span> by{" "}
           <Link
             className="underline hover:text-yellow-400 duration-300"
-            href={PRASHANT_WEBSITE_URL}
+            href={DEVELOPER_WEBSITE_URL}
             target="_blank"
           >
             Prashant
