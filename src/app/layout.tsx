@@ -27,7 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${zeyada.variable}`}>
+      <body
+        className={`${poppins.className} ${zeyada.variable} flex flex-col h-screen`}
+      >
         <Header />
         {children}
         <Footer />

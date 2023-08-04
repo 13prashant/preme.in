@@ -25,3 +25,9 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+@layer components {
+  .preme-container {
+    @apply container max-w-[95%] md:max-w-6xl mx-auto px-3 py-10 duration-300;
+  }
+}

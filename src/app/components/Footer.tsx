@@ -5,7 +5,7 @@ import { DEVELOPER_WEBSITE_URL } from "@/utils/constants";
 
 export default function Footer() {
   return (
-    <footer className="container mx-auto px-3 py-7">
+    <footer className="preme-container">
       <div className="flex flex-col gap-2">
         <Logo size="sm" />
         <SocialLinks size={20} />
