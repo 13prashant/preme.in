@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="preme-container">
       <div className="flex flex-col gap-2">
-        <Logo size="sm" />
+        <Logo text="Prem D Dave" size="sm" />
         <SocialLinks size={20} />
       </div>
       <hr className="my-3" />
