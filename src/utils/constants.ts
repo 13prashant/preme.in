@@ -9,31 +9,31 @@ export const DEVELOPER_WEBSITE_URL = "https://www.prashaant.in/";
 export const youtubeVideos = [
   {
     id: 1,
-    image: "/assets/youtubeThumbnails/radha-khovaai-2.0.jpg",
+    image: "/assets/youtube-thumbnails/radha-khovaai-2.0.jpg",
     link: "https://www.youtube.com/watch?v=vXCz8Ovv7Ok",
     alt: "Radha Khovaai 2.0",
   },
   {
     id: 2,
-    image: "/assets/youtubeThumbnails/shayarr.jpg",
+    image: "/assets/youtube-thumbnails/shayarr.jpg",
     link: "https://www.youtube.com/watch?v=VOVVl6nfSgg",
     alt: "Shayarr",
   },
   {
     id: 3,
-    image: "/assets/youtubeThumbnails/mari-maa.jpg",
+    image: "/assets/youtube-thumbnails/mari-maa.jpg",
     link: "https://www.youtube.com/watch?v=VWpjf1NhFr0",
     alt: "Mari Maa",
   },
   {
     id: 4,
-    image: "/assets/youtubeThumbnails/maru-mann-mohi-gayu.jpg",
+    image: "/assets/youtube-thumbnails/maru-mann-mohi-gayu.jpg",
     link: "https://www.youtube.com/watch?v=AYpbrNpGA24",
     alt: "Maru mann mohi gayu",
   },
   {
     id: 5,
-    image: "/assets/youtubeThumbnails/meri-guddiyaa.jpg",
+    image: "/assets/youtube-thumbnails/meri-guddiyaa.jpg",
     link: "https://www.youtube.com/watch?v=3PpCs8Uznow",
     alt: "Meri Guddiyaa",
   },
