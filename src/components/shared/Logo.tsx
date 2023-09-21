@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BottomBorder from "./common/BottomBorder";
+import { BottomBorder } from "@/components/ui";
 
 interface Props {
   text?: string;

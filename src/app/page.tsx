@@ -1,6 +1,4 @@
-import HeroSection from "./components/HeroSection";
-import MusicSection from "./components/MusicSection";
-import InstagramFeed from "./components/InstagramFeed";
+import { HeroSection, InstagramFeed, MusicSection } from "@/components/home";
 
 export default function Home() {
   return (

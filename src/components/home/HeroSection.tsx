@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Logo from "./Logo";
-import SocialLinks from "./SocialLinks";
+import { Logo, SocialLinks } from "@/components/shared";
 
 export default function HeroSection() {
   return (

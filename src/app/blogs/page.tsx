@@ -1,5 +1,5 @@
 import Link from "next/link";
-import BottomBorder from "../components/common/BottomBorder";
+import { BottomBorder } from "@/components/ui";
 import { blogs } from "@/utils/constants";
 
 export default function Blogs() {
