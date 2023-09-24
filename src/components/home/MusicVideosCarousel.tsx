@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { youtubeVideos } from "@/utils/constants";
+import { youtubeVideos } from "./helpers";
 
 export default function MusicVideosCarousel() {
   const [carouselIndex, setCarouselIndex] = useState(1);

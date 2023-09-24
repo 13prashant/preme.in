@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { BottomBorder } from "@/components/ui";
-import { blogs } from "@/utils/constants";
+import { blogs } from "./helpers";
 
 export default function Blogs() {
   return (

@@ -2,19 +2,18 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AiFillCloseSquare } from "react-icons/ai";
+import { SITE_VISIT_COUNT } from "@/utils/constants";
 
 export default function Featured() {
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
-    const siteVisitCount = Number(
-      localStorage.getItem("PREME_SITE_VISIT_COUNT")
-    );
+    const siteVisitCount = Number(localStorage.getItem(SITE_VISIT_COUNT));
 
     if (!siteVisitCount) {
       setShowPopup(true);
 
-      localStorage.setItem("PREME_SITE_VISIT_COUNT", "1");
+      localStorage.setItem(SITE_VISIT_COUNT, "1");
     } else {
       if (siteVisitCount >= 1) {
         setShowPopup(false);
@@ -22,16 +21,9 @@ export default function Featured() {
         setShowPopup(true);
       }
 
-      localStorage.setItem(
-        "PREME_SITE_VISIT_COUNT",
-        (siteVisitCount + 1).toString()
-      );
+      localStorage.setItem(SITE_VISIT_COUNT, (siteVisitCount + 1).toString());
     }
   }, []);
-
-  const handleClose = () => {
-    setShowPopup(false);
-  };
 
   return (
     <div
@@ -41,7 +33,7 @@ export default function Featured() {
     >
       <AiFillCloseSquare
         className="text-3xl absolute top-5 right-5 cursor-pointer hover:scale-x-105 duration-300"
-        onClick={handleClose}
+        onClick={() => setShowPopup(false)}
       />
       <div className="mt-8 mb-2">
         <h4 className="font-bold">Best Lyricist - Independent</h4>

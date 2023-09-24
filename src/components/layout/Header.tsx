@@ -4,21 +4,21 @@ import { usePathname } from "next/navigation";
 import { Logo } from "@/components/shared";
 
 const menus = [
-  {
-    id: 0,
-    name: "About",
-    href: "/",
-  },
+  // {
+  //   id: 0,
+  //   name: "About",
+  //   href: "/",
+  // },
   {
     id: 1,
     name: "Blogs",
     href: "/blogs",
   },
-  {
-    id: 2,
-    name: "Music",
-    href: "/",
-  },
+  // {
+  //   id: 2,
+  //   name: "Music",
+  //   href: "/",
+  // },
 ];
 
 export default function Header() {
@@ -27,7 +27,7 @@ export default function Header() {
   const isHomePage = pathname === "/";
 
   return (
-    <header className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center">
+    <header className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center ">
       <div>
         <Logo className={`${isHomePage ? "md:hidden" : ""}`} />
       </div>
