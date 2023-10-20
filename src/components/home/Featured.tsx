@@ -5,25 +5,25 @@ import { AiFillCloseSquare } from "react-icons/ai";
 import { SITE_VISIT_COUNT } from "@/utils/constants";
 
 export default function Featured() {
-  const [showPopup, setShowPopup] = useState(false);
+  const [showPopup, setShowPopup] = useState(true);
 
-  useEffect(() => {
-    const siteVisitCount = Number(localStorage.getItem(SITE_VISIT_COUNT));
+  // useEffect(() => {
+  //   const siteVisitCount = Number(localStorage.getItem(SITE_VISIT_COUNT));
 
-    if (!siteVisitCount) {
-      setShowPopup(true);
+  //   if (!siteVisitCount) {
+  //     setShowPopup(true);
 
-      localStorage.setItem(SITE_VISIT_COUNT, "1");
-    } else {
-      if (siteVisitCount >= 1) {
-        setShowPopup(false);
-      } else {
-        setShowPopup(true);
-      }
+  //     localStorage.setItem(SITE_VISIT_COUNT, "1");
+  //   } else {
+  //     if (siteVisitCount >= 1) {
+  //       setShowPopup(false);
+  //     } else {
+  //       setShowPopup(true);
+  //     }
 
-      localStorage.setItem(SITE_VISIT_COUNT, (siteVisitCount + 1).toString());
-    }
-  }, []);
+  //     localStorage.setItem(SITE_VISIT_COUNT, (siteVisitCount + 1).toString());
+  //   }
+  // }, []);
 
   return (
     <div
