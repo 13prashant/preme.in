@@ -11,7 +11,7 @@ const menus = [
   // },
   {
     id: 1,
-    name: "Blogs",
+    name: "Blog / Article / Story / Poem",
     href: "/blogs",
   },
   // {

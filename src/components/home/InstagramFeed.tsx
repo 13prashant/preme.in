@@ -28,7 +28,7 @@ export default async function InstagramPosts() {
   return (
     <section className="preme-container duration-300">
       <h2 className="mb-5 text-center text-2xl font-extralight">
-        Poems penned by me
+        Poems / Shayris penned by me
       </h2>
 
       <div className="grid place-items-center">
