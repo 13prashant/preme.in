@@ -29,7 +29,7 @@ export default function FeaturedPopup() {
     <div
       className={`${
         showPopup ? "" : "hidden"
-      } fixed z-10 w-full h-80 md:w-[35rem] md:h-80 bg-yellow-100 text-center m-2 md:m-0 p-5 shadow-xl`}
+      } fixed z-20 w-full h-80 md:w-[35rem] md:h-80 bg-yellow-100 text-center dark:text-black m-2 md:m-0 p-5 shadow-xl`}
     >
       <AiFillCloseSquare
         className="text-3xl absolute top-5 right-5 cursor-pointer hover:scale-x-105 duration-300"

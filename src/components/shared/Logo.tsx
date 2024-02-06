@@ -8,10 +8,12 @@ interface Props {
 }
 export default function Logo({ text = "Preme", className, size }: Props) {
   return (
-    <Link href="/" className={`${className} w-fit dark:text-[#adbac7]`}>
+    <Link href="/" className={`${className} w-fit`}>
       <div className="relative w-fit">
         <h1
-          className={`relative z-10 font-zeyada ${size === "sm" ? "text-3xl" : "text-6xl"}`}
+          className={`relative z-10 font-zeyada ${
+            size === "sm" ? "text-3xl" : "text-6xl"
+          }`}
         >
           {text}
         </h1>
