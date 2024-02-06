@@ -3,8 +3,8 @@ import { Logo, SocialLinks } from "@/components/shared";
 
 export default function HeroSection() {
   return (
-    <section className="preme-container">
-      <div className="flex flex-col gap-5 md:flex-row-reverse md:items-center md:max-w-7xl mx-auto">
+    <section className="dark:bg-black">
+      <div className="preme-container flex flex-col gap-5 md:flex-row-reverse md:items-center md:max-w-7xl mx-auto">
         <div className="flex flex-col gap-3 md:w-1/2">
           <div className="flex gap-3">
             <div className="relative h-24 w-1/2 md:h-44">

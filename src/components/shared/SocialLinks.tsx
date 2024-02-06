@@ -11,18 +11,21 @@ export default function SocialLinks({ size = 30 }: Props) {
     <div className="flex gap-4">
       <Link href={INSTAGRAM_URL}>
         <BsInstagram
-          className="hover:text-yellow-400 duration-300"
+          className="hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
           size={size}
         />
       </Link>
       <Link href={FACEBOOK_URL}>
         <BsFacebook
-          className="hover:text-yellow-400 duration-300"
+          className="hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
           size={size}
         />
       </Link>
       <Link href={TWITTER_URL}>
-        <BsTwitter className="hover:text-yellow-400 duration-300" size={size} />
+        <BsTwitter
+          className="hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
+          size={size}
+        />
       </Link>
     </div>
   );

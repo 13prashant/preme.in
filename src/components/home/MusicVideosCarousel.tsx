@@ -42,7 +42,6 @@ export default function MusicVideosCarousel() {
       <IoIosArrowBack
         onClick={() => handlePrevItem()}
         className="hidden md:block cursor-pointer"
-        color="#000"
         size={100}
       />
 
@@ -75,7 +74,6 @@ export default function MusicVideosCarousel() {
       <IoIosArrowForward
         onClick={() => handleNextItem()}
         className="hidden md:block cursor-pointer"
-        color="#000"
         size={100}
       />
     </div>

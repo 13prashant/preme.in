@@ -1,4 +1,5 @@
 import { Poppins, Zeyada } from "next/font/google";
+import Providers from "./providers";
 import { Header, Footer } from "@/components/layout";
 import "./globals.css";
 
@@ -29,9 +30,11 @@ export default function RootLayout({
       <body
         className={`${poppins.className} ${zeyada.variable} flex flex-col h-screen`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

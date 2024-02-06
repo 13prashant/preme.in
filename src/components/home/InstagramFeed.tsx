@@ -25,7 +25,7 @@ const getInstagramPosts = async (): Promise<InstagramPost[]> => {
 
 export default async function InstagramPosts() {
   return (
-    <section className="bg-gray-100">
+    <section className="bg-gray-100 dark:bg-zinc-950">
       <div className="preme-container duration-300">
         <h2 className="mb-5 text-center text-2xl font-extralight">
           Poems / Shayris penned by me
@@ -62,7 +62,7 @@ export default async function InstagramPosts() {
 
           <Link
             href={INSTAGRAM_URL}
-            className="mt-5 text-gray-700 hover:text-yellow-400 duration-300"
+            className="mt-5 text-gray-700 hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
             target="_blank"
           >
             See more
