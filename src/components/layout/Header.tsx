@@ -27,7 +27,7 @@ export default function Header() {
   const isHomePage = pathname === "/";
 
   return (
-    <header className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center ">
+    <header className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center">
       <div>
         <Logo className={`${isHomePage ? "md:hidden" : ""}`} />
       </div>

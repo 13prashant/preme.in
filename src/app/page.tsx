@@ -1,5 +1,6 @@
 import {
   Featured,
+  FeaturedPopup,
   HeroSection,
   InstagramFeed,
   MusicSection,
@@ -8,8 +9,9 @@ import {
 export default function Home() {
   return (
     <main>
-      <Featured />
+      <FeaturedPopup />
       <HeroSection />
+      <Featured />
       <MusicSection />
       <InstagramFeed />
     </main>
