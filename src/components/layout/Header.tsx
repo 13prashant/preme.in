@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/shared";
+import ThemeSwitch from "./ThemeSwitch";
 
 const menus = [
   // {
@@ -34,7 +35,7 @@ export default function Header() {
         </div>
         <div className="flex items-center">
           <span className="md:hidden">/</span>
-          <nav className="flex gap-3 md:gap-7">
+          <nav className="flex gap-5 md:gap-7 items-center">
             {menus.map((item) => (
               <Link
                 className="font-bold text-gray-700 hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
@@ -44,6 +45,7 @@ export default function Header() {
                 {item.name}
               </Link>
             ))}
+            <ThemeSwitch />
           </nav>
         </div>
       </div>
