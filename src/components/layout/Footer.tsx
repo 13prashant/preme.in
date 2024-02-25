@@ -31,7 +31,7 @@ export default function Footer() {
               Privacy Policy
             </Link>
           </div>
-          <p className="relative z-20">
+          <p>
             Made with{" "}
             <span className="text-yellow-400 dark:text-yellow-700">
               &hearts;
