@@ -4,7 +4,7 @@ import { blogs } from "./helpers";
 
 export default function Blogs() {
   return (
-    <section className="mb-auto">
+    <section className="mb-auto ">
       <div className="preme-container">
         <div className="flex flex-col gap-3">
           {blogs.map((blog) => (

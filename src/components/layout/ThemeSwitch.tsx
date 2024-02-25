@@ -18,7 +18,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "dark") {
     return (
       <FiSun
-        className="relative z-20 text-xl text-gray-700 cursor-pointer"
+        className="relative z-20 text-xl text-gray-700 cursor-pointer hover:text-yellow-500 duration-300"
         onClick={() => setTheme("light")}
       />
     );
@@ -27,7 +27,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme === "light") {
     return (
       <FiMoon
-        className="relative z-20 text-xl text-gray-700 cursor-pointer"
+        className="relative z-20 text-xl text-gray-700 cursor-pointer hover:text-yellow-500 duration-300"
         onClick={() => setTheme("dark")}
       />
     );
