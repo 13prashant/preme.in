@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AiFillCloseSquare } from "react-icons/ai";
-import { SITE_VISIT_COUNT } from "@/utils/constants";
+import { SITE_VISIT_COUNT } from "@/lib/constants";
 
 export default function FeaturedPopup() {
   const [showPopup, setShowPopup] = useState(false);

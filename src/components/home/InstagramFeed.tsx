@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { instagramPosts } from "./helpers";
-import { INSTAGRAM_URL } from "@/utils/constants";
+import { INSTAGRAM_URL } from "@/lib/constants";
 
 export interface InstagramPost {
   caption?: string;

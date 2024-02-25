@@ -1,81 +1,38 @@
-"use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import { youtubeVideos } from "./helpers";
 
 export default function MusicVideosCarousel() {
-  const [carouselIndex, setCarouselIndex] = useState(1);
-  const [isMobileScreen, setIsMobileScreen] = useState<boolean>(false);
-
-  const updateMedia = () => {
-    setIsMobileScreen(window.innerWidth < 768);
-  };
-
-  useEffect(() => {
-    updateMedia();
-    window.addEventListener("resize", updateMedia, { passive: true });
-    return () => window.removeEventListener("resize", updateMedia);
-  }, []);
-
-  const handleNextItem = () => {
-    if (carouselIndex > 2) {
-      setCarouselIndex(1);
-    } else {
-      setCarouselIndex(carouselIndex + 1);
-    }
-  };
-
-  const handlePrevItem = () => {
-    if (carouselIndex < 2) {
-      setCarouselIndex(3);
-    } else {
-      setCarouselIndex(carouselIndex - 1);
-    }
-  };
-
   return (
-    <div className="z-20 flex items-center">
-      <IoIosArrowBack
-        onClick={() => handlePrevItem()}
-        className="hidden md:block cursor-pointer"
-        size={100}
-      />
-
-      <Carousel
-        selectedItem={carouselIndex}
-        centerMode
-        centerSlidePercentage={isMobileScreen ? 60 : 33.3}
-        emulateTouch={true}
-        showThumbs={false}
-        showArrows={false}
-        showStatus={false}
-        showIndicators={false}
-        className="w-full"
-      >
+    <Carousel
+      className="w-full"
+      opts={{
+        loop: true,
+      }}
+    >
+      <CarouselContent className="">
         {youtubeVideos.map(({ id, link, alt, image }) => (
-          <Link key={id} href={link} target="_blank">
-            <div className="p-1 md:p-2 hover:scale-105 duration-300">
-              <div className="relative h-44 w-full md:h-56 duration-300">
-                <Image
-                  style={{ objectFit: "contain" }}
-                  src={image}
-                  fill
-                  alt={alt}
-                />
+          <CarouselItem
+            key={id}
+            className="basis-10/12 xs:basis-1 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4"
+          >
+            <Link href={link} target="_blank">
+              <div className="relative h-44 w-full md:h-56 hover:scale-105 duration-300">
+                <Image className="object-contain" src={image} fill alt={alt} />
               </div>
-            </div>
-          </Link>
+            </Link>
+          </CarouselItem>
         ))}
-      </Carousel>
-      <IoIosArrowForward
-        onClick={() => handleNextItem()}
-        className="hidden md:block cursor-pointer"
-        size={100}
-      />
-    </div>
+      </CarouselContent>
+      <CarouselPrevious className="hidden xl:flex" />
+      <CarouselNext className="hidden xl:flex" />
+    </Carousel>
   );
 }

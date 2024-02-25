@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo, SocialLinks } from "@/components/shared";
-import { DEVELOPER_WEBSITE_URL } from "@/utils/constants";
+import { DEVELOPER_WEBSITE_URL } from "@/lib/constants";
 
 export default function Footer() {
   return (
