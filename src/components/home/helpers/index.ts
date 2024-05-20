@@ -2,6 +2,12 @@ import { InstagramPost } from "../InstagramFeed";
 
 export const youtubeVideos = [
   {
+    id: 0,
+    image: "/assets/youtube-thumbnails/kasturi.jpg",
+    link: "https://www.youtube.com/watch?v=Ik7fVUwSCjw",
+    alt: "Kasturi",
+  },
+  {
     id: 1,
     image: "/assets/youtube-thumbnails/radha-khovaai-2.0.jpg",
     link: "https://www.youtube.com/watch?v=vXCz8Ovv7Ok",
