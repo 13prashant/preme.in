@@ -1,15 +1,18 @@
 "use client";
 
 import Confetti from "react-confetti";
+import useWindowSize from "@/hooks/useWindowSize";
 
 export default function RecentNews() {
+  const { windowSize } = useWindowSize();
+
   return (
     <section className="bg-gray-100 dark:bg-zinc-950 border-y border-y-gray-500">
       <Confetti
         className="w-full h-full"
         recycle={false}
-        width={window.innerWidth}
-        height={window.innerHeight}
+        width={windowSize.width}
+        height={windowSize.height}
       />
       <div className="preme-container md:py-36 flex flex-col md:flex-row gap-10 items-center justify-center duration-300">
         <div className="relative h-60 md:h-96 w-full">
