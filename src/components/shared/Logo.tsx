@@ -6,7 +6,7 @@ interface Props {
   className?: string;
   size?: "sm";
 }
-export default function Logo({ text = "Preme", className, size }: Props) {
+export default function Logo({ text = "Prem", className, size }: Props) {
   return (
     <Link href="/" className={`${className} w-fit`}>
       <div className="relative w-fit">
