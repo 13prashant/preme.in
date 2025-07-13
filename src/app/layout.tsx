@@ -16,7 +16,7 @@ const zeyada = Zeyada({
 });
 
 export const metadata = {
-  title: "Prem Dave",
+  title: "Prem",
   description: "Legal insights, captivating stories, & soulful music",
 };
 
