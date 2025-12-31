@@ -25,7 +25,7 @@ export default function RecentNews() {
             Divine Blockbuster
           </h3>
           <h3 className="text-3xl md:text-5xl font-semibold tracking-tighter">
-            Laalo - Krishna Sada Sahayate
+            Laalo – Krishna Sada Sahaayate
           </h3>
         </div>
 
