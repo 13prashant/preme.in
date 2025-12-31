@@ -14,7 +14,7 @@ import {
 export default function LaaloSongsCarousel() {
   return (
     <Carousel
-      className="w-full mt-10"
+      className="w-full"
       opts={{
         loop: true,
       }}

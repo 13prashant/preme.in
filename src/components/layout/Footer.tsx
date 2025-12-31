@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Logo, SocialLinks } from "@/components/shared";
-import { DEVELOPER_WEBSITE_URL } from "@/lib/constants";
+import { DEVELOPER_WEBSITE_URL, EMAIL_ADDRESS } from "@/lib/constants";
 
 export default function Footer() {
   return (
@@ -9,6 +9,9 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <Logo text="Prem D Dave" size="sm" />
           <SocialLinks size={20} />
+          <h3 className="text-gray-500 hover:text-yellow-400 dark:hover:text-yellow-700 duration-300">
+            <a href={`mailto:${EMAIL_ADDRESS}`}>{EMAIL_ADDRESS}</a>
+          </h3>
         </div>
         <hr className="my-3" />
         <div className="flex flex-col gap-3 md:flex-row md:justify-between md:items-end text-gray-500 text-sm">
@@ -17,19 +20,6 @@ export default function Footer() {
               Copyright © {new Date().getFullYear()} Prem Dave. All rights
               reserved.
             </p>
-            <Link
-              className="hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
-              href="/"
-            >
-              Terms of Use
-            </Link>
-            <span> | </span>
-            <Link
-              className="hover:text-yellow-400 dark:hover:text-yellow-700 duration-300"
-              href="/"
-            >
-              Privacy Policy
-            </Link>
           </div>
           <p>
             Made with{" "}
