@@ -1,6 +1,5 @@
 import {
   Featured,
-  FeaturedPopup,
   HeroSection,
   InstagramFeed,
   MusicSection,
@@ -10,7 +9,6 @@ import {
 export default function Home() {
   return (
     <main>
-      <FeaturedPopup />
       <RecentNews />
       <HeroSection />
       <Featured />

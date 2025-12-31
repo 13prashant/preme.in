@@ -40,19 +40,6 @@ export default function RecentNews() {
           />
         </div>
 
-        {/* <div className="flex flex-col md:flex-row md:gap-10 items-center">
-          <div className="relative h-80 w-full">
-            <iframe
-              className="absolute top-0 left-0 w-full h-full"
-              src="https://www.youtube.com/embed/MwGX-VY27go"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
-          <LaaloSongsCarousel />
-        </div> */}
         <LaaloSongsCarousel />
       </div>
     </section>
