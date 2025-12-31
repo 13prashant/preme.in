@@ -38,6 +38,7 @@ export default function HeroSection() {
           </div>
           <div className="flex flex-col gap-3 md:items-end md:w-1/2">
             <Logo text="Prem D Dave" className="hidden md:block" />
+            <Logo text="Prem" className="md:hidden" />
             <p className="text-gray-500 md:text-right">
               Blending the power of words, the art of law, and the magic of
               melodies. Explore captivating stories, insightful legal articles,
