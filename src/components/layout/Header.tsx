@@ -29,7 +29,7 @@ export default function Header() {
 
   return (
     <header className="dark:bg-black">
-      <div className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center">
+      <div className="preme-container flex flex-col gap-1 justify-between md:flex-row md:items-center px-3 py-5">
         <div>
           <Logo className={`${isHomePage ? "md:hidden" : ""}`} />
         </div>

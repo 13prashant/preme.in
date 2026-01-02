@@ -9,7 +9,7 @@ export default function RecentNews() {
   const { windowSize } = useWindowSize();
 
   return (
-    <section className="relative bg-gray-100 dark:bg-zinc-950 md:border-none border-y border-y-gray-500 overflow-x-auto">
+    <section className="relative bg-gray-100 dark:bg-zinc-950 md:border-none border-y border-y-gray-500">
       <Confetti
         className="w-full h-full"
         recycle={false}
@@ -43,7 +43,9 @@ export default function RecentNews() {
             allowFullScreen
           />
         </div>
+      </div>
 
+      <div className="w-full sticky bottom-0 z-[60] bg-black/30 backdrop-blur-sm py-2">
         <LaaloSongsCarousel />
       </div>
     </section>

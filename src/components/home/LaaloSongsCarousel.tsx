@@ -7,8 +7,6 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 
 export default function LaaloSongsCarousel() {
@@ -55,8 +53,6 @@ export default function LaaloSongsCarousel() {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="hidden xl:flex" />
-      <CarouselNext className="hidden xl:flex" />
     </Carousel>
   );
 }
