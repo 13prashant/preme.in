@@ -3,28 +3,32 @@
 import Confetti from "react-confetti";
 import useWindowSize from "@/hooks/useWindowSize";
 import LaaloSongsCarousel from "./LaaloSongsCarousel";
+import { LaaloSongsMarquee } from "./LaaloSongsMarquee";
 
 export default function RecentNews() {
   const { windowSize } = useWindowSize();
 
   return (
-    <section className="bg-gray-100 dark:bg-zinc-950 border-y border-y-gray-500 overflow-x-auto">
+    <section className="relative bg-gray-100 dark:bg-zinc-950 md:border-none border-y border-y-gray-500 overflow-x-auto">
       <Confetti
         className="w-full h-full"
         recycle={false}
         width={windowSize.width}
         height={windowSize.height}
       />
+      <div className="hidden md:block absolute inset-0 overflow-hidden z-40">
+        <LaaloSongsMarquee />
+      </div>
 
-      <div className="preme-container md:pb-36 md:pt-16 flex flex-col gap-10 items-center justify-center duration-300">
+      <div className="preme-container md:pb-36 md:pt-16 flex flex-col gap-10 items-center justify-center duration-300 z-50 relative">
         <div className="text-center flex flex-col items-center gap-4">
-          <h2 className="text-center text-2xl font-extralight">
+          <h2 className="dark:text-white text-center text-2xl">
             Hear from the Songwriter of the
           </h2>
           <h3 className="text-xl md:text-2xl font-semibold -mb-4 text-gray-500">
             Divine Blockbuster
           </h3>
-          <h3 className="text-3xl md:text-5xl font-semibold tracking-tighter">
+          <h3 className="dark:text-white text-3xl md:text-5xl font-semibold tracking-tighter">
             Laalo – Krishna Sada Sahaayate
           </h3>
         </div>
