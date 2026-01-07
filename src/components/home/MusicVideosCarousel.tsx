@@ -17,16 +17,17 @@ export default function MusicVideosCarousel() {
       className="w-full"
       opts={{
         loop: true,
+        dragFree: true,
       }}
     >
       <CarouselContent className="">
         {[
-          "Ik7fVUwSCjw",
-          "vXCz8Ovv7Ok",
-          "VOVVl6nfSgg",
-          "VWpjf1NhFr0",
-          "AYpbrNpGA24",
-          "3PpCs8Uznow",
+          "Ik7fVUwSCjw", // Kasturi
+          "vXCz8Ovv7Ok", // Radha Khovaai 2.0
+          "VOVVl6nfSgg", // Shayarr
+          "VWpjf1NhFr0", // Mari Maa
+          "AYpbrNpGA24", // Maru man mohi gayu
+          "3PpCs8Uznow", // Meri Guddiyaa
         ].map((id) => (
           <CarouselItem
             key={id}

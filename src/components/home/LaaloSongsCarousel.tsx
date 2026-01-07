@@ -15,15 +15,16 @@ export default function LaaloSongsCarousel() {
       className="w-full"
       opts={{
         loop: true,
+        dragFree: true,
       }}
     >
       <CarouselContent className="">
         {[
-          "cgDf9PV-Moo",
-          "8KAZDi0bREw",
-          "lzs8PQuwXcI",
-          "3Y4-VQsBYSw",
-          "EC4lexrR5YQ",
+          "cgDf9PV-Moo", // Manorath Jeev
+          "8KAZDi0bREw", // Mann Mohan
+          "lzs8PQuwXcI", // Kaan Tari Re
+          "3Y4-VQsBYSw", // Maade Mane Lai Ja
+          "EC4lexrR5YQ", // Krishna Theme
         ].map((id) => (
           <CarouselItem
             key={id}
